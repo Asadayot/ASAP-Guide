@@ -4,3 +4,6 @@
 [submodule "ATLAS"]
 	path = ATLAS
 	url = https://github.com/Yorunokyujitsu/TegraExplorer
+[submodule "atmo_logo_creator"]
+	path = atmo_logo_creator
+	url = https://github.com/Yorunokyujitsu/atmo_logo_creator
