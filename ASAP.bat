@@ -362,6 +362,10 @@ REM ============================================================
 
 @echo off
 cd /d "%~dp0"
+
+REM symbolic head error quick fix
+%~dp0msys64\mingw64.exe bash -c "rm -rf Atmosphere && git clone --recursive -b test https://github.com/Yorunokyujitsu/Atmosphere"
+
 %~dp0msys64\mingw64.exe %~dp0build.sh
 
 GOTO TITLE
