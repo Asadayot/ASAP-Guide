@@ -73,7 +73,7 @@ ASAP_project programs/overlays/ovl-sysmodules "make" "y"
 ASAP_project programs/overlays/ReverseNX-RT "make" "y"
 ASAP_project programs/overlays/Status-Monitor-Overlay "make" "y"
 # ASAP_project programs/sys-clk/sys-clk "make" "y"
-ASAP_project programs/overlays/Ultrahand-Overlay "make" "y"
+# ASAP_project programs/overlays/Ultrahand-Overlay "make" "y"
 ASAP_project programs/sysmodules/sys-con "make" "y"
 ASAP_project programs/sysmodules/MissionControl "make dist" "y"
 
