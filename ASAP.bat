@@ -365,6 +365,8 @@ cd /d "%~dp0"
 
 REM symbolic head error quick fix
 %~dp0msys64\mingw64.exe bash -c "rm -rf Atmosphere && git clone --recursive -b test https://github.com/Yorunokyujitsu/Atmosphere"
+%~dp0msys64\mingw64.exe bash -c "rm -rf programs/sysmodules/MissionControl && git clone --recursive https://github.com/Yorunokyujitsu/MissionControl programs/sysmodules/MissionControl"
+%~dp0msys64\mingw64.exe bash -c "rm -rf programs/sysmodules/sys-con && git clone --recursive https://github.com/Yorunokyujitsu/sys-con programs/sysmodules/sys-con"
 
 %~dp0msys64\mingw64.exe %~dp0build.sh
 
