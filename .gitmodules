@@ -46,3 +46,9 @@
 [submodule "programs/overlays/Ultrahand-Overlay"]
 	path = programs/overlays/Ultrahand-Overlay
 	url = https://github.com/Yorunokyujitsu/Ultrahand-Overlay
+[submodule "programs/sysmodules/MissionControl"]
+	path = programs/sysmodules/MissionControl
+	url = https://github.com/Yorunokyujitsu/MissionControl
+[submodule "programs/sysmodules/sys-con"]
+	path = programs/sysmodules/sys-con
+	url = https://github.com/Yorunokyujitsu/sys-con
