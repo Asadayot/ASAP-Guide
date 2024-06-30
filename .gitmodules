@@ -19,3 +19,6 @@
 [submodule "hekate"]
 	path = hekate
 	url = https://github.com/Yorunokyujitsu/hekate
+[submodule "libnx"]
+	path = libnx
+	url = https://github.com/switchbrew/libnx
