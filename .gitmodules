@@ -25,3 +25,24 @@
 [submodule "programs/homebrews/JKSV"]
 	path = programs/homebrews/JKSV
 	url = https://github.com/Yorunokyujitsu/JKSV
+[submodule "programs/overlays/EdiZon-Overlay"]
+	path = programs/overlays/EdiZon-Overlay
+	url = https://github.com/Yorunokyujitsu/EdiZon-Overlay
+[submodule "programs/overlays/emuiibo"]
+	path = programs/overlays/emuiibo
+	url = https://github.com/Yorunokyujitsu/emuiibo
+[submodule "programs/overlays/FPSLocker"]
+	path = programs/overlays/FPSLocker
+	url = https://github.com/Yorunokyujitsu/FPSLocker
+[submodule "programs/overlays/ovl-sysmodules"]
+	path = programs/overlays/ovl-sysmodules
+	url = https://github.com/Yorunokyujitsu/ovl-sysmodules
+[submodule "programs/overlays/ReverseNX-RT"]
+	path = programs/overlays/ReverseNX-RT
+	url = https://github.com/Yorunokyujitsu/ReverseNX-RT
+[submodule "programs/overlays/Status-Monitor-Overlay"]
+	path = programs/overlays/Status-Monitor-Overlay
+	url = https://github.com/Yorunokyujitsu/Status-Monitor-Overlay
+[submodule "programs/overlays/Ultrahand-Overlay"]
+	path = programs/overlays/Ultrahand-Overlay
+	url = https://github.com/Yorunokyujitsu/Ultrahand-Overlay
