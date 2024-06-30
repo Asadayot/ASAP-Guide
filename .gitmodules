@@ -22,3 +22,6 @@
 [submodule "libnx"]
 	path = libnx
 	url = https://github.com/switchbrew/libnx
+[submodule "programs/homebrews/JKSV"]
+	path = programs/homebrews/JKSV
+	url = https://github.com/Yorunokyujitsu/JKSV
