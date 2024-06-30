@@ -7,3 +7,6 @@
 [submodule "atmo_logo_creator"]
 	path = atmo_logo_creator
 	url = https://github.com/Yorunokyujitsu/atmo_logo_creator
+[submodule "Atmosphere"]
+	path = Atmosphere
+	url = https://github.com/Yorunokyujitsu/Atmosphere
