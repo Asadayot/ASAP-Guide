@@ -10,3 +10,9 @@
 [submodule "Atmosphere"]
 	path = Atmosphere
 	url = https://github.com/Yorunokyujitsu/Atmosphere
+[submodule "hb/hbmenu"]
+	path = hb/hbmenu
+	url = https://github.com/Yorunokyujitsu/nx-hbmenu
+[submodule "hb/nx-hbloader"]
+	path = hb/nx-hbloader
+	url = https://github.com/Yorunokyujitsu/nx-hbloader
