@@ -16,3 +16,6 @@
 [submodule "hb/nx-hbloader"]
 	path = hb/nx-hbloader
 	url = https://github.com/Yorunokyujitsu/nx-hbloader
+[submodule "hekate"]
+	path = hekate
+	url = https://github.com/Yorunokyujitsu/hekate
