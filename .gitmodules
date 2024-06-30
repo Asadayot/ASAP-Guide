@@ -1,3 +1,6 @@
 [submodule "ASAP-Updater"]
 	path = ASAP-Updater
 	url = https://github.com/Yorunokyujitsu/aio-switch-updater
+[submodule "ATLAS"]
+	path = ATLAS
+	url = https://github.com/Yorunokyujitsu/TegraExplorer
