@@ -7,6 +7,10 @@
 [submodule "atmo_logo_creator"]
 	path = atmo_logo_creator
 	url = https://github.com/Yorunokyujitsu/atmo_logo_creator
+[submodule "Atmosphere"]
+	path = Atmosphere
+	url = https://github.com/Yorunokyujitsu/Atmosphere
+	branch = test	
 [submodule "hb/hbmenu"]
 	path = hb/hbmenu
 	url = https://github.com/Yorunokyujitsu/nx-hbmenu
