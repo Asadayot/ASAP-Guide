@@ -440,7 +440,7 @@ echo                                            Installing...
 echo.
 echo =====================================================================================================
 
-xcopy "%~dp0output\direct\*" "%sd%:\" /H /Y /C /R /S /I >nul 2>nul
+xcopy "%~dp0output\direct\*" "%sd%:\" /H /Y /C /R /S /E /I >nul 2>nul
 
 GOTO HEKATEUSB
 
