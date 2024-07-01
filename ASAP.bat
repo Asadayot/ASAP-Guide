@@ -100,7 +100,7 @@ echo ---------------------------------------------------------------------------
 echo.
 powershell -Command "Start-Sleep -Seconds 3"
 
-set "BackupFolder=%sd%:\Backup"
+set "BackupFolder=%sd%:\backup"
 set "AB=%BackupFolder%\"
 
 if not exist "%AB%" (
@@ -519,7 +519,7 @@ mkdir "%~dp0ASAP-PACKAGE\bootloader\ini"
 REM create to version and loacations.conf file
 mkdir "%~dp0ASAP-PACKAGE\ASAP\atmosphere\contents\010B6ECF3B30D000\03"
 echo %hekate_ver%^|%asap_ver%^|%type% > "%~dp0ASAP-PACKAGE\ASAP\atmosphere\contents\010B6ECF3B30D000\03\0100B0E8EB470000"
-echo ["usb:/","usbfs:/","sdmc:/","sdmc:/roms/","system:/","user:/","safe:/",{"url":"https://tiny.cc/eeveesaveproject","title":"Eevee Save Project","enabled":1},{"url":"https://e.cchi.me/","title":"Ecchi Save Project","enabled":1},{"url":"https://liberashop.rs/roms","title":"LiberaShop Retro ROMs","enabled":1},{"url":"https://liberashop.rs/","title":"LiberaShop","enabled":1},{"url":"https://publictest:publicpass@switch.ghostland.at/","title":"Ghost eShop","enabled":1}] > "%~dp0ASAP-PACKAGE\ASAP\locations.conf"
+echo ["usb:/","usbfs:/","sdmc:/","sdmc:/roms/","system:/","user:/","safe:/",{"url":"https://tiny.cc/eeveesaveproject","title":"Eevee Save Project","enabled":1},{"url":"https://liberashop.rs/roms","title":"LiberaShop Retro ROMs","enabled":1},{"url":"https://liberashop.rs/","title":"LiberaShop","enabled":1},{"url":"https://publictest:publicpass@switch.ghostland.at/","title":"Ghost eShop","enabled":1}] > "%~dp0ASAP-PACKAGE\ASAP\locations.conf"
 cd ASAP-PACKAGE
 zip -r AIS_normal.zip .\
 xcopy "%~dp0ASAP-PACKAGE\AIS_normal.zip" "%~dp0output\AIS\" /H /Y /C /R /S /I >nul 2>nul

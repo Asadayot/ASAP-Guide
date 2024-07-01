@@ -98,7 +98,7 @@ cp_file "$src_dir/hekate/CTCaer/hekate.bin" "$dist_dir"
 [ -f "$dist_dir/hekate.bin" ] && mv "$dist_dir/hekate.bin" "$dist_dir/payload.bin"
 
 # Create locations.conf file
-echo '["usb:/","usbfs:/","sdmc:/","sdmc:/roms/","system:/","user:/","safe:/",{"url":"https://tiny.cc/eeveesaveproject","title":"Eevee Save Project","enabled":1},{"url":"https://e.cchi.me/","title":"Ecchi Save Project","enabled":1},{"url":"https://liberashop.rs/roms","title":"LiberaShop Retro ROMs","enabled":1},{"url":"https://liberashop.rs/","title":"LiberaShop","enabled":1},{"url":"https://publictest:publicpass@switch.ghostland.at/","title":"Ghost eShop","enabled":1}]' > "$dist_dir/ASAP/locations.conf"
+echo '["usb:/","usbfs:/","sdmc:/","sdmc:/roms/","system:/","user:/","safe:/",{"url":"https://tiny.cc/eeveesaveproject","title":"Eevee Save Project","enabled":1},{"url":"https://liberashop.rs/roms","title":"LiberaShop Retro ROMs","enabled":1},{"url":"https://liberashop.rs/","title":"LiberaShop","enabled":1},{"url":"https://publictest:publicpass@switch.ghostland.at/","title":"Ghost eShop","enabled":1}]' > "$dist_dir/ASAP/locations.conf"
 
 # Print completion message
 echo "ASAP package created successfully at: $src_dir/output/"
