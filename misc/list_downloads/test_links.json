@@ -141,7 +141,9 @@
             "[ Lineage OS ] 21.0｜Android 14｜Tablet": "https://www.dropbox.com/scl/fi/ypyd3qj12b8rowkxihjgk/Android14_tab.zip?rlkey=8ouu7td9sy6gwmle6iva7pjqm&dl=1"
         },
         "ubuntu": {
-            "[ Ubuntu Noble ] 24.04 LTS": "https://www.dropbox.com/scl/fi/7k3qe1wtuu0932ottc85z/Ubuntu.zip?rlkey=d8x66p5ncs5gqg1c80xf0pn9v&dl=1"
+            "[ Ubuntu Noble ] 24.04 LTS": "https://www.dropbox.com/scl/fi/ma4y46yawtpq35b16b5qr/ubuntu-noble.zip?rlkey=dn02n2j09y6nmp3hf6awgawcx&dl=1",
+            "[ Ubuntu Jammy ] 22.04 LTS": "https://www.dropbox.com/scl/fi/l37t5d4e263a56b8dft39/ubuntu-jammy.zip?rlkey=mkul2xdi4gi74bna91no9k0ck&dl=1",
+            "[ Ubuntu Bionic ] 18.04 LTS": "https://www.dropbox.com/scl/fi/c6njt8k6jijf41l8qm0pt/ubuntu-bionic.zip?rlkey=hoqmv7jet7ftwlai2dkvzx2vi&dl=1"
         },
         "lakka": {
             "[ Lakka ] aarch64-4.4": "https://www.dropbox.com/scl/fi/4ryz27tqjymywuubhup9j/Lakka.zip?rlkey=2gy7w4c2slu6horyplka8k2fy&dl=1"
