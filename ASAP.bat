@@ -579,6 +579,18 @@ mkdir "%~dp0ASAP-PACKAGE\Ultrahand\App+\switch\.overlays\.offload"
 cd ..\App+
 zip -r App+.zip .\
 xcopy "%~dp0ASAP-PACKAGE\Ultrahand\App+\App+.zip" "%~dp0output\archive_aio\" /H /Y /C /R /S /I >nul 2>nul
+if exist "%~dp0ASAP-PACKAGE\Ultrahand\App+\App+.zip" (DEL /F "%~dp0ASAP-PACKAGE\Ultrahand\App+\App+.zip")
+xcopy "%~dp0programs\sys-clk\sys-clk-oc\atmosphere\contents\00FF0000636C6BFF" "%~dp0ASAP-PACKAGE\Ultrahand\App+\atmosphere\contents\00FF0000636C6BFF" /H /Y /C /R /S /E /I >nul 2>nul
+xcopy "%~dp0programs\patches\sys-patch\out\atmosphere\contents\420000000000000B\flags\boot2.flag" "%~dp0ASAP-PACKAGE\Ultrahand\App+\atmosphere\contents\010B6ECF3B30D000\02\" /H /Y /C /R /S /I >nul 2>nul
+xcopy "%~dp0programs\patches\sys-patch\out\atmosphere\contents\420000000000000B\exefs.nsp" "%~dp0ASAP-PACKAGE\Ultrahand\App+\atmosphere\contents\010B6ECF3B30D000\02\" /H /Y /C /R /S /I >nul 2>nul
+xcopy "%~dp0Atmosphere\config_templates\cloader\eosloader\loader.kip" "%~dp0ASAP-PACKAGE\Ultrahand\App+\backup\kips\.EOS\" /H /Y /C /R /S /I >nul 2>nul
+xcopy "%~dp0Atmosphere\config_templates\cloader\scloader\loader.kip" "%~dp0ASAP-PACKAGE\Ultrahand\App+\backup\kips\.SC\" /H /Y /C /R /S /I >nul 2>nul
+xcopy "%~dp0programs\overlays\Ultrahand-Overlay\Packages\*" "%~dp0ASAP-PACKAGE\Ultrahand\App+\config\ASAP-assist\" /H /Y /C /R /S /E /I >nul 2>nul
+xcopy "%~dp0programs\overlays\Ultrahand-Overlay\ovlmenu.ovl" "%~dp0ASAP-PACKAGE\Ultrahand\App+\switch\.overlays\" /H /Y /C /R /S /I >nul 2>nul
+xcopy "%~dp0programs\sys-clk\sys-clk-oc\switch\.overlays\sys-clk-overlay.ovl" "%~dp0ASAP-PACKAGE\Ultrahand\App+\switch\.overlays\" /H /Y /C /R /S /I >nul 2>nul
+xcopy "%~dp0programs\sys-clk\sys-clk-oc\switch\sys-clk-manager" "%~dp0ASAP-PACKAGE\Ultrahand\App+\switch\sys-clk-manager" /H /Y /C /R /S /E /I >nul 2>nul
+zip -r Ultrahand.zip .\
+xcopy "%~dp0ASAP-PACKAGE\Ultrahand\App+\Ultrahand.zip" "%~dp0output\ASAP-Updater\" /H /Y /C /R /S /I >nul 2>nul
 
 REM Package+
 xcopy "%~dp0programs\sys-clk\sys-clk-oc\atmosphere\contents\00FF0000636C6BFF" "%~dp0ASAP-PACKAGE\Ultrahand\Package+\OC" /H /Y /C /R /S /E /I >nul 2>nul
@@ -628,12 +640,12 @@ if exist "%~dp0migrate\HATS\switch" (RD /S /Q "%~dp0migrate\HATS\switch")
 if exist "%~dp0migrate\HATS\boot.dat" (DEL /F "%~dp0migrate\HATS\boot.dat")
 if exist "%~dp0migrate\HATS\boot.ini" (DEL /F "%~dp0migrate\HATS\boot.ini")
 REM atmosphere folder
-xcopy "%~dp0ATLAS\output\atmosphere\contents\010B6ECF3B30D000\01\420E00000311EM04" "%~dp0ASAP-PACKAGE\HATS\atmosphere\contents\010B6ECF3B30D000\01\" /H /Y /C /R /S /I >nul 2>nul
-xcopy "%~dp0migrate\migrate.te" "%~dp0ASAP-PACKAGE\HATS\atmosphere\contents\010B6ECF3B30D000\01\" /H /Y /C /R /S /I >nul 2>nul
+xcopy "%~dp0migrate\migrate.te" "%~dp0ASAP-PACKAGE\HATS\ASAP\atmosphere\contents\010B6ECF3B30D000\01\" /H /Y /C /R /S /I >nul 2>nul
 REM bootloader folder
 xcopy "%~dp0ASAP-Updater\ATLAS\output\ATLAS.bin" "%~dp0ASAP-PACKAGE\HATS\bootloader\payloads\" /H /Y /C /R /S /I >nul 2>nul
 xcopy "%~dp0ATLAS\output\bootloader\sys\module" "%~dp0ASAP-PACKAGE\HATS\bootloader\sys\" /H /Y /C /R /S /I >nul 2>nul
 xcopy "%~dp0hekate\CTCaer\hekate_ipl.ini" "%~dp0ASAP-PACKAGE\HATS\bootloader\" /H /Y /C /R /S /I >nul 2>nul
+xcopy "%~dp0migrate\HATS\update.bmp" "%~dp0ASAP-PACKAGE\HATS\bootloader\res\bootscreen\" /H /Y /C /R /S /I >nul 2>nul
 REM sx_gear files
 xcopy "%~dp0migrate\HATS\exosphere.ini" "%~dp0ASAP-PACKAGE\HATS\" /H /Y /C /R /S /I >nul 2>nul
 xcopy "%~dp0migrate\HATS\hbmenu.nro" "%~dp0ASAP-PACKAGE\HATS\" /H /Y /C /R /S /I >nul 2>nul
@@ -642,7 +654,7 @@ if exist "%~dp0migrate\HATS\exosphere.ini" (DEL /F "%~dp0migrate\HATS\exosphere.
 if exist "%~dp0migrate\HATS\hbmenu.nro" (DEL /F "%~dp0migrate\HATS\hbmenu.nro")
 if exist "%~dp0migrate\HATS\payload.bin" (DEL /F "%~dp0migrate\HATS\payload.bin")
 REM create folder, rename file
-if exist "%~dp0ASAP-PACKAGE\HATS\atmosphere\contents\010B6ECF3B30D000\01\migrate.te" (rename %~dp0ASAP-PACKAGE\HATS\atmosphere\contents\010B6ECF3B30D000\01\migrate.te 01001FF3CDEC5000)
+if exist "%~dp0ASAP-PACKAGE\HATS\ASAP\atmosphere\contents\010B6ECF3B30D000\01\migrate.te" (rename %~dp0ASAP-PACKAGE\HATS\ASAP\atmosphere\contents\010B6ECF3B30D000\01\migrate.te 01001FF3CDEC5000)
 
 cd ASAP-PACKAGE\HATS
 zip -r HATS.zip .\
@@ -681,12 +693,12 @@ if exist "%~dp0migrate\Kefir\games" (RD /S /Q "%~dp0migrate\KEFIR\games")
 if exist "%~dp0migrate\Kefir\oc" (RD /S /Q "%~dp0migrate\KEFIR\oc")
 if exist "%~dp0migrate\Kefir\switch" (RD /S /Q "%~dp0migrate\KEFIR\switch")
 REM atmosphere folder
-xcopy "%~dp0ATLAS\output\atmosphere\contents\010B6ECF3B30D000\01\420E00000311EM04" "%~dp0ASAP-PACKAGE\KEFIR\atmosphere\contents\010B6ECF3B30D000\01\" /H /Y /C /R /S /I >nul 2>nul
-xcopy "%~dp0migrate\migrate.te" "%~dp0ASAP-PACKAGE\KEFIR\atmosphere\contents\010B6ECF3B30D000\01\" /H /Y /C /R /S /I >nul 2>nul
+xcopy "%~dp0migrate\migrate.te" "%~dp0ASAP-PACKAGE\KEFIR\ASAP\atmosphere\contents\010B6ECF3B30D000\01\" /H /Y /C /R /S /I >nul 2>nul
 REM bootloader folder
 xcopy "%~dp0ASAP-Updater\ATLAS\output\ATLAS.bin" "%~dp0ASAP-PACKAGE\KEFIR\bootloader\payloads\" /H /Y /C /R /S /I >nul 2>nul
 xcopy "%~dp0ATLAS\output\bootloader\sys\module" "%~dp0ASAP-PACKAGE\KEFIR\bootloader\sys\" /H /Y /C /R /S /I >nul 2>nul
 xcopy "%~dp0hekate\CTCaer\hekate_ipl.ini" "%~dp0ASAP-PACKAGE\KEFIR\bootloader\" /H /Y /C /R /S /I >nul 2>nul
+xcopy "%~dp0migrate\Kefir\updating.bmp" "%~dp0ASAP-PACKAGE\Kefir\bootloader\res\bootscreen\" /H /Y /C /R /S /I >nul 2>nul
 REM sx_gear files
 xcopy "%~dp0migrate\Kefir\exosphere.ini" "%~dp0ASAP-PACKAGE\KEFIR\" /H /Y /C /R /S /I >nul 2>nul
 xcopy "%~dp0migrate\Kefir\hbmenu.nro" "%~dp0ASAP-PACKAGE\KEFIR\" /H /Y /C /R /S /I >nul 2>nul
@@ -696,7 +708,8 @@ if exist "%~dp0migrate\Kefir\hbmenu.nro" (DEL /F "%~dp0migrate\KEFIR\hbmenu.nro"
 if exist "%~dp0migrate\Kefir\install.bat" (DEL /F "%~dp0migrate\KEFIR\install.bat")
 if exist "%~dp0migrate\Kefir\payload.bin" (DEL /F "%~dp0migrate\KEFIR\payload.bin")
 REM create folder, rename file
-if exist "%~dp0ASAP-PACKAGE\KEFIR\atmosphere\contents\010B6ECF3B30D000\01\migrate.te" (rename %~dp0ASAP-PACKAGE\KEFIR\atmosphere\contents\010B6ECF3B30D000\01\migrate.te 01001FF3CDEC5000)
+if exist "%~dp0ASAP-PACKAGE\KEFIR\ASAP\atmosphere\contents\010B6ECF3B30D000\01\migrate.te" (rename %~dp0ASAP-PACKAGE\KEFIR\ASAP\atmosphere\contents\010B6ECF3B30D000\01\migrate.te 01001FF3CDEC5000)
+if exist "%~dp0ASAP-PACKAGE\Kefir\bootloader\res\bootscreen\updating.bmp" (rename %~dp0ASAP-PACKAGE\Kefir\bootloader\res\bootscreen\updating.bmp update.bmp)
 
 cd ASAP-PACKAGE\KEFIR
 zip -r KEFIR.zip .\
@@ -730,12 +743,12 @@ if exist "%~dp0migrate\DEEPSEA\config" (RD /S /Q "%~dp0migrate\DEEPSEA\config")
 if exist "%~dp0migrate\DEEPSEA\emuiibo" (RD /S /Q "%~dp0migrate\DEEPSEA\emuiibo")
 if exist "%~dp0migrate\DEEPSEA\switch" (RD /S /Q "%~dp0migrate\DEEPSEA\switch")
 REM atmosphere folder
-xcopy "%~dp0ATLAS\output\atmosphere\contents\010B6ECF3B30D000\01\420E00000311EM04" "%~dp0ASAP-PACKAGE\DEEPSEA\atmosphere\contents\010B6ECF3B30D000\01\" /H /Y /C /R /S /I >nul 2>nul
-xcopy "%~dp0migrate\migrate.te" "%~dp0ASAP-PACKAGE\DEEPSEA\atmosphere\contents\010B6ECF3B30D000\01\" /H /Y /C /R /S /I >nul 2>nul
+xcopy "%~dp0migrate\migrate.te" "%~dp0ASAP-PACKAGE\DEEPSEA\ASAP\atmosphere\contents\010B6ECF3B30D000\01\" /H /Y /C /R /S /I >nul 2>nul
 REM bootloader folder
 xcopy "%~dp0ASAP-Updater\ATLAS\output\ATLAS.bin" "%~dp0ASAP-PACKAGE\DEEPSEA\bootloader\payloads\" /H /Y /C /R /S /I >nul 2>nul
 xcopy "%~dp0ATLAS\output\bootloader\sys\module" "%~dp0ASAP-PACKAGE\DEEPSEA\bootloader\sys\" /H /Y /C /R /S /I >nul 2>nul
 xcopy "%~dp0hekate\CTCaer\hekate_ipl.ini" "%~dp0ASAP-PACKAGE\DEEPSEA\bootloader\" /H /Y /C /R /S /I >nul 2>nul
+xcopy "%~dp0migrate\DEEPSEA\update.bmp" "%~dp0ASAP-PACKAGE\DEEPSEA\bootloader\res\bootscreen\" /H /Y /C /R /S /I >nul 2>nul
 REM sx_gear files
 xcopy "%~dp0migrate\DEEPSEA\hbmenu.nro" "%~dp0ASAP-PACKAGE\DEEPSEA\" /H /Y /C /R /S /I >nul 2>nul
 xcopy "%~dp0migrate\DEEPSEA\hekate*.bin" "%~dp0ASAP-PACKAGE\DEEPSEA\" /H /Y /C /R /S /I >nul 2>nul
@@ -745,7 +758,7 @@ echo [exosphere] > "%~dp0ASAP-PACKAGE\DEEPSEA\exosphere.ini"
 echo blank_prodinfo_sysmmc=0 >> "%~dp0ASAP-PACKAGE\DEEPSEA\exosphere.ini"
 echo blank_prodinfo_emummc=1 >> "%~dp0ASAP-PACKAGE\DEEPSEA\exosphere.ini"
 REM create folder, rename file
-if exist "%~dp0ASAP-PACKAGE\DEEPSEA\atmosphere\contents\010B6ECF3B30D000\01\migrate.te" (rename %~dp0ASAP-PACKAGE\DEEPSEA\atmosphere\contents\010B6ECF3B30D000\01\migrate.te 01001FF3CDEC5000)
+if exist "%~dp0ASAP-PACKAGE\DEEPSEA\ASAP\atmosphere\contents\010B6ECF3B30D000\01\migrate.te" (rename %~dp0ASAP-PACKAGE\DEEPSEA\ASAP\atmosphere\contents\010B6ECF3B30D000\01\migrate.te 01001FF3CDEC5000)
 if exist "%~dp0ASAP-PACKAGE\DEEPSEA\hekate*.bin" (rename %~dp0ASAP-PACKAGE\DEEPSEA\hekate*.bin payload.bin)
 
 cd ASAP-PACKAGE\DEEPSEA
