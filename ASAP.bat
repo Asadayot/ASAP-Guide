@@ -529,8 +529,8 @@ if exist "%~dp0ASAP-PACKAGE\ASAP\ASAP-Updater.nro" (DEL /F "%~dp0ASAP-PACKAGE\AS
 REM ASAP-normal.test
 xcopy "%~dp0ASAP-Updater\change\test\ASAP-Updater_test.nro" "%~dp0ASAP-PACKAGE\ASAP\" /H /Y /C /R /S /I >nul 2>nul
 if exist "%~dp0ASAP-PACKAGE\ASAP\ASAP-Updater_test.nro" (rename %~dp0ASAP-PACKAGE\ASAP\ASAP-Updater_test.nro ASAP-Updater.nro)
-xcopy "%~dp0patches\sys-patch\out\switch\.overlays\sys-patch-overlay.ovl" "%~dp0ASAP-PACKAGE\switch\.overlays\" /H /Y /C /R /S /I >nul 2>nul
-xcopy "%~dp0patches\SPU\out\switch\SPU" "%~dp0ASAP-PACKAGE\ASAP\SPU" /H /Y /C /R /S /E /I >nul 2>nul
+xcopy "%~dp0programs\patches\sys-patch\out\switch\.overlays\sys-patch-overlay.ovl" "%~dp0ASAP-PACKAGE\ASAP\" /H /Y /C /R /S /I >nul 2>nul
+xcopy "%~dp0programs\patches\SPU\out\switch\SPU" "%~dp0ASAP-PACKAGE\ASAP\SPU" /H /Y /C /R /S /E /I >nul 2>nul
 if exist "%~dp0ASAP-PACKAGE\ASAP\atmosphere\contents\010B6ECF3B30D000\03\0100B0E8EB470000" (DEL /F "%~dp0ASAP-PACKAGE\ASAP\atmosphere\contents\010B6ECF3B30D000\03\0100B0E8EB470000")
 echo %hekate_ver%^| TESTER ^|%type% > "%~dp0ASAP-PACKAGE\ASAP\atmosphere\contents\010B6ECF3B30D000\03\0100B0E8EB470000"
 zip -r AIS_normal.zip .\
