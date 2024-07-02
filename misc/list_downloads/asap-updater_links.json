@@ -1,7 +1,7 @@
 {
     "cfws": {
         "ASAP": {
-            "ver.0601_fix : 안정 - 손상된 압축파일 수정": "https://www.dropbox.com/scl/fi/dtjnulywsug7fvtn5pdkk/AIS_normal.zip?rlkey=zf1iba15jm7kadr8r490wa9vk&dl=1"
+            "ver.0703 : 18.1.0 지원": "https://www.dropbox.com/scl/fi/dtjnulywsug7fvtn5pdkk/AIS_normal.zip?rlkey=zf1iba15jm7kadr8r490wa9vk&dl=1"
         },
         "AIO": {
             "[ Kefir : 741 ] 18.1.0｜1.7.1｜6.2.0": "https://www.dropbox.com/scl/fi/a2spu5s7cscv5ra9hxhzd/KEFIR.zip?rlkey=bjvet26zztw6yurykc6k4nqaz&dl=1",
@@ -10,7 +10,7 @@
         }
     },
     "hekate": {
-        "[ Hekate 6.2.0 & Nyx 1.6.2 ]": "https://github.com/CTCaer/hekate/releases/download/v6.2.0/hekate_ctcaer_6.2.0_Nyx_1.6.2_v4.zip"
+        "[ Hekate 6.2.1 & Nyx 1.6.3 ]": "https://github.com/CTCaer/hekate/releases/download/v6.2.1/hekate_ctcaer_6.2.1_Nyx_1.6.3.zip"
     },
     "HorizonOS": {
         "[ HOS ] 18.1.0": "https://www.dropbox.com/scl/fi/42g20dffmexcvtjejf6tm/Firmware.18.1.0.zip?rlkey=8kxoae3acr688btmrcs83bkhb&dl=1",
@@ -114,7 +114,7 @@
             "[ mGBA : 0.10.3 ] - GB 에뮬레이터": "https://www.dropbox.com/scl/fi/vhl1dcin94s0tjzhm10zg/mGBA.zip?rlkey=z11eud4kl92o93ut5epb0x8d3&dl=1",
             "[ Moonlight-Switch : 1.1.0 ] - PC 스트리밍": "https://www.dropbox.com/scl/fi/0qcvl7qej46lzy6nshyic/Moonlight-Switch.zip?rlkey=7ahwnlhnbzqx46e0z6tzv3v04&dl=1",
             "[ NX-Activity-Log : 1.5.0 ] - 활동 기록 관리": "https://www.dropbox.com/scl/fi/6z3nm7n6vz7aak4bfq3zx/NX-Activity-Log.zip?rlkey=wi7gdpmhul3taqscidsk1yydp&dl=1",
-            "[ NXDumpTool : 2.0.0 ] - 카트리지/롬 덤프": "https://www.dropbox.com/scl/fi/u4s1andqcy4y0fs497c6l/NXDumpTool.zip?rlkey=fclaj29r66klcsf858q69kt7d&dl=1",
+            "[ NXDumpTool : 2.0.0 ] - 카트리지/롬 덤프": "https://www.dropbox.com/scl/fi/boduuwhlna9vcrtsfmrm2/NXDumpTool.zip?rlkey=kx08x9qab45sefp293vs5ih85&dl=1",
             "[ NXMP : 0.9.0 ] - 영상 관리": "https://www.dropbox.com/scl/fi/ycnodi9lsj8r9p2vxj75b/NXMP.zip?rlkey=faxxkjejjq0ciagp4o3k95ifk&dl=1",
             "[ NX-Shell : 4.0.1 ] - 종합 파일 관리": "https://www.dropbox.com/scl/fi/fud1zdlwh6ok3a9ktmwe6/NX-Shell.zip?rlkey=goqyljufji9hrci2j2iqc8yvv&dl=1",
             "[ NxThemesinstaller : 2.7.1 ] - 테마 관리": "https://www.dropbox.com/scl/fi/8ab70zzs371jnk59dwnwx/NxThemesinstaller.zip?rlkey=quky56sxm8zhoek48s1tctn44&dl=1",
