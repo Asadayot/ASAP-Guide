@@ -16,8 +16,10 @@
   - **ASAP.bat**: *SD install, make/packaging batch*
 
 ## All Source Code Download
-- Run **AIS-Tester Only version** *(ASAP.exe)* > Click on **`Source Code`**
-- Git clone **ASAP archive** > Unzip some zip files using password
+- Run Git bash or terminal > git clone.
+```
+git clone --recursive https://github.com/Yorunokyujitsu/archive_aio
+```
 
 ## How to build & packaging
 1. Install **[python](https://www.python.org/downloads/)** and **[MSYS2](https://github.com/msys2/msys2-installer/releases)** in **`./msys64/`**.
@@ -51,7 +53,7 @@ pip install py lz4 pycryptodome
 ```
 pacman -Syuu --needed --noconfirm
 ```
-8. Place the sys-patch in **`patches/`** path.
+8. Unzip extra.7z (for password, please contact blog channel talk).
 9. Edit source codes.
 10. Download **[zip.exe](http://stahlworks.com/dev/zip.exe)**, **[unzip.exe](http://stahlworks.com/dev/unzip.exe)** and move to **`windows/system32/`** path.
 11. Place the image files in the **`atmo_logo_creator/resources/`** with names **`splash`** or **`fatal`** or both.
@@ -98,7 +100,7 @@ export DEVKITPPC=/opt/devkitpro/devkitPPC
 cd atmo_logo_creator
 python ./scripts/create_logos.py
 ```
-7. Place the sys-patch in **`patches/`** path.
+7. Unzip extra.7z (for password, please contact blog channel talk).
 8. Build all repositories.
 ```
 chmod +x build.sh
